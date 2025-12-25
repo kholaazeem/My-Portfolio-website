@@ -1,40 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal portfolio website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khola Azeem | Web Developer</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Portfolio website</h1>
 
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Khola Azeem</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
+<!-- ===== HOME ===== -->
+<section id="home" class="vh-100 d-flex align-items-center bg-light">
+  <div class="container text-center">
+    <h1 class="fw-bold">Hi, I'm Khola Azeem</h1>
+    <p class="lead">Front-End Web Developer | JavaScript Learner</p>
+    <a href="#projects" class="btn btn-dark me-2">View Projects</a>
+    <a href="#contact" class="btn btn-outline-dark">Contact Me</a>
+  </div>
+</section>
 
+<!-- ===== ABOUT ===== -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">About Me</h2>
+    <p class="text-center">
+      I am a passionate web development student learning HTML, CSS, JavaScript, Bootstrap,
+      and Supabase. I enjoy creating responsive websites and simple web applications.
+      Currently, I am improving my JavaScript and backend skills.
+    </p>
+  </div>
+</section>
 
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Skills</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-3">HTML5</div>
+      <div class="col-md-4 mb-3">CSS3</div>
+      <div class="col-md-4 mb-3">JavaScript</div>
+      <div class="col-md-4 mb-3">Bootstrap</div>
+      <div class="col-md-4 mb-3">Supabase</div>
+      <div class="col-md-4 mb-3">GitHub</div>
+    </div>
+  </div>
+</section>
 
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Todo App</h5>
+            <p class="card-text">A simple todo application using JavaScript and Supabase.</p>
+            <a href="#" class="btn btn-dark btn-sm">Live Demo</a>
+            <a href="#" class="btn btn-outline-dark btn-sm">GitHub</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Login Signup System</h5>
+            <p class="card-text">Authentication system built with Supabase.</p>
+            <a href="#" class="btn btn-dark btn-sm">Live Demo</a>
+            <a href="#" class="btn btn-outline-dark btn-sm">GitHub</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Responsive Website</h5>
+            <p class="card-text">A fully responsive website using HTML, CSS and Bootstrap.</p>
+            <a href="#" class="btn btn-dark btn-sm">Live Demo</a>
+            <a href="#" class="btn btn-outline-dark btn-sm">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Me</h2>
+    <form class="col-md-6 mx-auto">
+      <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+      <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+      <textarea class="form-control mb-3" placeholder="Your Message" rows="4"></textarea>
+      <button class="btn btn-dark w-100">Send Message</button>
+    </form>
+  </div>
+</section>
 
+<!-- ===== FOOTER ===== -->
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">© 2025 Khola Azeem | Web Developer</p>
+</footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="script.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
